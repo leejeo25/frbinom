@@ -1,0 +1,55 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# frbinom
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of frbinom is to generate random variables of fractional binomial distribution and compute its density, cumulative distribution, and quantiles. 
+
+## Installation
+
+You can install the development version of frbinom from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("leejeo25/frbinom")
+```
+
+## Example
+
+10 random variables of a fractional binomial distribution.
+
+```{r}
+library(frbinom)
+rfrbinom(n=10, size=50, prob=.6, h=.8, c=.2)
+```
+
+The probability density of the fractional binomial distribution.
+
+```{r}
+dfrbinom(x=seq(0,50,1), size=50, prob=.6, h=.8, c=.2)
+```
+
+The histogram of the fractional binomial random variables overlaid with its density.
+```{r}
+simu.<-rfrbinom(10000, 50, .6, .7, .2)
+den.<-dfrbinom(seq(0,50,1), 50, .6, .7, .2)
+hist(simu., breaks=51, probability = TRUE)
+lines(seq(0,50,1), den., type="l")
+```
+
+
