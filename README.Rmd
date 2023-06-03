@@ -46,9 +46,9 @@ dfrbinom(x=seq(0,50,1), size=50, prob=.6, h=.7, c=.2)
 
 The histogram of fractional binomial random variables overlaid with its density.
 ```{r}
-simu.<-rfrbinom(10000, 50, .6, .7, .2)
+x<-rfrbinom(10000, 50, .6, .7, .2)
 den.<-dfrbinom(seq(0,50,1), 50, .6, .7, .2)
-hist(simu., breaks=51, probability = TRUE, main="Histogram of fractional binomial random variables and its density")
+hist(x, breaks=51, probability = TRUE, main="Histogram of fractional binomial random variables and its density")
 lines(seq(0,50,1), den., type="l")
 ```
 

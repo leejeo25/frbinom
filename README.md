@@ -27,7 +27,7 @@ devtools::install_github("leejeo25/frbinom")
 ``` r
 library(frbinom)
 rfrbinom(n=10, size=50, prob=.6, h=.7, c=.2)
-#>  [1] 29 30 24 40 40 37 31 35 36 33
+#>  [1] 23 21 34 38  0 17 10  0 33 19
 ```
 
 The probability density of the fractional binomial distribution.
@@ -51,9 +51,9 @@ The histogram of fractional binomial random variables overlaid with its
 density.
 
 ``` r
-simu.<-rfrbinom(10000, 50, .6, .7, .2)
+x<-rfrbinom(10000, 50, .6, .7, .2)
 den.<-dfrbinom(seq(0,50,1), 50, .6, .7, .2)
-hist(simu., breaks=51, probability = TRUE, main="Histogram of fractional binomial random variables and its density")
+hist(x, breaks=51, probability = TRUE, main="Histogram of fractional binomial random variables and its density")
 lines(seq(0,50,1), den., type="l")
 ```
 
