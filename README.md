@@ -27,7 +27,7 @@ devtools::install_github("leejeo25/frbinom")
 ``` r
 library(frbinom)
 rfrbinom(n=10, size=50, prob=.6, h=.7, c=.2)
-#>  [1] 35 40 30 40 20 41 32 38 36 39
+#>  [1] 29 30 24 40 40 37 31 35 36 33
 ```
 
 The probability density of the fractional binomial distribution.
