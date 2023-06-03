@@ -10,7 +10,7 @@ Authors@R:
            family  = "Gernander",
            role    = c("ctb"),
            email   = "daniel.gernander@gmail.com"))
-Description: Generating fractional binomioal random variables and computing density, cumulative distribution, and quantiles of fractional binomial distributions.
+Description: Generating fractional binomial random variables and computing density, cumulative distribution, and quantiles of fractional binomial distributions.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
