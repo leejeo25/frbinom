@@ -21,7 +21,7 @@
 #' and the k-th moment is asymptotically proportional to \eqn{n^{(2H-1)k}} for \eqn{k\geq 2}.
 #'
 #' @references
-#' Lee, J. (2023). Generalized Bernoulli process and fractional Poisson process. arXiv:2209.01516v2.
+#' Lee, J. (2023). Generalized Bernoulli process and fractional Poisson process. arXiv:2209.01516.
 #'
 #' @examples
 #' # 10 random variables of a fractional binomial distribution II.

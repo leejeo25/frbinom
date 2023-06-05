@@ -68,5 +68,5 @@ pfrbinom2(x=22, size=50, h=.8, c=.2)
 qfrbinom2(p=.8, size=50, h=.8, c=.2)
 }
 \references{
-Lee, J. (2023). Generalized Bernoulli process and fractional Poisson process. arXiv:2209.01516v2.
+Lee, J. (2023). Generalized Bernoulli process and fractional Poisson process. arXiv:2209.01516.
 }
